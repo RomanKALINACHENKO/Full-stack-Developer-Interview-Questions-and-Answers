@@ -326,18 +326,6 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 * What is *Consumer Driven Contract*? [link](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html)
 * [Types of tests](https://stackify.com/ultimate-guide-performance-testing-and-software-testing)
 
-#### [[⬆]](#toc) <a name='agile'>Agile:</a>
-* What is Agile? (http://agilemanifesto.org/principles.html)
-  * Individuals and interactions over Processes and tools
-  * Working software over Comprehensive documentation
-  * Customer collaboration over Contract negotiation
-  * Responding to change over Following a plan
-* What is Scrum? (Roles: product owner, development team, scrum master. Events: sprint)
-* What are the differences between Scrum and Waterfall? ( http://www.leanagiletraining.com/agile/waterfall-versus-scrum-how-do-they-compare/)
-* What is XP? ()
-* What is Kanban?
-* What is Lean development?
-
 #### [[⬆]](#toc) <a name='algorithms'>Algorithms:</a>
 * What Ο(n), Ω(n), Θ(n)?
 * What is NP, NP-completeness, NP-hardness with examples?
