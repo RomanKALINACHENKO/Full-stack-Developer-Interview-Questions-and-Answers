@@ -26,11 +26,8 @@
   * [QA](#qa)
   * [Agile, Scrum, XP](#agile)
   * [Algorithms](#algorithms)
-  * [UML](#uml)
   * [Other](#other)
   * [Big Data](#big-data)
-  * [Image processing](#image-processing)
-  * [Cryptography](#cryptography)
   * [Security](#security)
   * [Android](#android)
   * [Books](#books)
@@ -108,13 +105,6 @@
   * Semaphore
   * LinkedTransferQueue
 * What is *data race*? (When a program contains two conflicting accesses that are not ordered by a [happens-before](https://docs.oracle.com/javase/specs/jls/se12/html/jls-17.html#jls-17.4.5) relationship, it is said to contain a data race. Two accesses to (reads of or writes to) the same variable are said to be conflicting if at least one of the accesses is a write. But see [this](https://stackoverflow.com/questions/16615140/is-volatile-read-happens-before-volatile-write/16615355#16615355))
-* Java [*memory model*](https://docs.oracle.com/javase/specs/jls/se12/html/jls-17.html#jls-17.4)
-  * A program is correctly synchronized if and only if all sequentially consistent executions are free of data races
-  * Correctly synchronized programs have sequentially consistent semantics. If a program is correctly synchronized, then all executions of the program will appear to be sequentially consistent
-  * Causality requirement for incorrectly synchronized programs: [link](https://pdfs.semanticscholar.org/c132/11697f5c803221533a07bd6db839fa60b7b8.pdf)
-* What is *monitor* in Java? (Each object in Java is associated with a monitor, which a thread can lock or unlock)
-* What is *safe publication*?
-* What is *wait*/*notify*?
 * [*Amdahl's law*](https://en.wikipedia.org/wiki/Amdahl%27s_law)? (Speedup = 1 / (1 - p + p / n))
 * [*Dining philosophers problem*](https://en.wikipedia.org/wiki/Dining_philosophers_problem) (Resource hierarchy (first take lower-indexed fork), arbitrator, communication (dirty/clean forks)).
 * [*Produces/consumer*](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem) problem.
@@ -305,6 +295,7 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
     qSort(a, i, toInclusive);
 }
 ```
+* Prime numbers
 
 #### [[⬆]](#toc) <a name='functional-programming'>Functional programming:</a>
 * [*Referential transparency*](https://en.wikipedia.org/wiki/Referential_transparency)
@@ -364,27 +355,6 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 * [*Lambda architecture*](https://en.wikipedia.org/wiki/Lambda_architecture)
 * [*HyperLogLog*](https://en.wikipedia.org/wiki/HyperLogLog)
 * [*Event sourcing*](http://microservices.io/patterns/data/event-sourcing.html)
-
-#### [[⬆]](#toc) <a name='image-processing'>Image processing:</a>
-
-#### [[⬆]](#toc) <a name='cryptography'>Cryptography:</a>
-* [*Public-key cryptography*](https://en.wikipedia.org/wiki/Public-key_cryptography)
-* [*Public key certificate*](https://en.wikipedia.org/wiki/Public_key_certificate)
-* [*Blockchain*](https://en.wikipedia.org/wiki/Blockchain)
-* [*Proof-of-work system*](https://en.wikipedia.org/wiki/Proof-of-work_system)
-* [*Secret sharing*](https://en.wikipedia.org/wiki/Secret_sharing)
-* [*RSA*](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
-```
-select 2 primes: p,q
-n = p*q
-phi(n) = (p-1)*(q-1)
-select 1<e<phi(n), gcd(e,phi(n))=1
-d=e^-1 mod phi(n)
-(e,n) - public key
-(d,n) - private key
-c = m^e mod n
-m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
-```
 
 #### [[⬆]](#toc) <a name='security'>Security:</a>
 * What is *OpenID and OAuth2.0 and OpenID Connect*?
