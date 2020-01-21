@@ -4,7 +4,6 @@
 
   * [Architecture](#architecture)
   * [Concurrency](#concurrency)
-  * [Java](#java)
   * [General Questions](#general)
   * [WEB](#web)
   * [SQL](#sql)
@@ -18,10 +17,7 @@
   * [Networking](#networking)
   * [Operating system](#os)
   * [Compilers](#compilers)
-  * [C++](#cpp)
   * [Javascript](#javascript)
-  * [Python](#python)
-  * [Go](#go)
   * [Code writing](#codewriting)
   * [Functional programming](#functional-programming)
   * [Reactive programming](#reactive-programming)
@@ -32,7 +28,6 @@
   * [Algorithms](#algorithms)
   * [UML](#uml)
   * [Other](#other)
-  * [Machine learning](#machine-learning)
   * [Big Data](#big-data)
   * [Image processing](#image-processing)
   * [Cryptography](#cryptography)
@@ -126,29 +121,6 @@
 * [*Readers/writers*](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) problem.
 * [*Transactional memory*](https://en.wikipedia.org/wiki/Software_transactional_memory)
 * [*Coroutine*](https://en.wikipedia.org/wiki/Coroutine)
-
-#### [[⬆]](#toc) <a name='java'>Java:</a>
-* [*PhantomReference*](https://en.wikipedia.org/wiki/Phantom_reference), [*WeakReference*](https://en.wikipedia.org/wiki/Weak_reference), [*SoftReference*](https://en.wikipedia.org/wiki/Soft_reference), *finalize()*, *ReferenceQueue*.
-* How to correctly stop a thread? (Thread.interrupt())
-* What is *Spring*? (Spring Framework is an application container for Java that supplies many useful features, such as Inversion of Control, Dependency Injection, abstract data access, transaction management, and more)
-  * Spring is a framework for dependency injection: a design pattern that allows the developer to build very decoupled systems by injecting dependencies into classes.
-  * It elegantly wraps Java libraries and makes then much easier to use in your application.
-  * Included in the framework are implementations of commonly used patterns such as REST and MVC web framework which are predominately use by in web applications.
-* What is *Spring-Boot*?
-* What is *Hibernate* and JPA (Caches, lazy-loading)?
-* *Garbage collection*. (G1, Young/Old generation collectors combination examples: PS Scavenge/PS MarkSweep, Copy/MarkSweepCompact)
-* How to write *benchmarks*? ([jmh](http://openjdk.java.net/projects/code-tools/jmh/))
-* What are Java 9 modularity?
-* What is OSGI? (Specification describes a modular system and a service platform for the Java programming language that implements a complete and dynamic component model. Each bundle has its own classpath. Dependency hell avoidance. META-INF/MANIFEST.MF contains OSGI-info)
-* Serializable / Externalizable
-* What is a *servlet* (versions of servlet api, Servlet 4.0)?
-* What is a *servlet filter*? How to implement *GZipFilter*? (ResponseWrapper)
-* What is *generics* and PECS (producer extends and consumer super)?
-* What is the difference between <?>, \<Object\>, <? extends Object> and no generic type? [link1](http://stackoverflow.com/questions/8055389/whats-the-difference-between-and-extends-object-in-java-generics) [link2](http://stackoverflow.com/questions/678822/what-is-the-difference-between-and-object-in-java-generics)
-* Explain method signature for [Collections.max(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#max-java.util.Collection-), [Collections.fill(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#fill-java.util.List-T-), [Collections.copy(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#copy-java.util.List-java.util.List-), [Collections.sort(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-java.util.Comparator-)
-* Why are arrays covariant but generics are invariant? [link](http://stackoverflow.com/questions/18666710/why-are-arrays-covariant-but-generics-are-invariant)
-* Major specs: JAX-RS, JAX-WS, JMS, JAXB, XSLT, XPATH, JNDI, JMX, JDBC, XML(SAX, DOM, StAX)
-* [*Performance Diagnostic Methodology*](https://dzone.com/articles/how-to-solve-your-java-performance-problems-part-2)
 
 #### [[⬆]](#toc) <a name='general'>General Questions:</a>
 * [*Polymorphism*](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) (Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)
@@ -280,18 +252,6 @@
 * [*Context-free grammar*](https://en.wikipedia.org/wiki/Context-free_grammar)
 * [*Chomsky hierarchy*](https://en.wikipedia.org/wiki/Chomsky_hierarchy)
 
-#### [[⬆]](#toc) <a name='cpp'>C++:</a>
-* [*C++ standard*](http://eel.is/c++draft/)
-* [*Memory model*](https://en.cppreference.com/w/cpp/language/memory_model)
-* *Data race*. When an evaluation of an expression writes to a memory location and another evaluation reads or modifies the same memory location, the expressions are said to conflict. A program that has two conflicting evaluations has a data race unless
-  * both evaluations execute on the same thread or in the same signal handler, or
-  * both conflicting evaluations are atomic operations (see std::atomic), or
-  * one of the conflicting evaluations happens-before another (see std::memory_order)
-
-  If a data race occurs, the behavior of the program is undefined.
-* [*SFINAE*](https://en.cppreference.com/w/cpp/language/sfinae) [1](https://cpppatterns.com/patterns/function-template-sfinae.html)
-* [*PImpl*] https://en.cppreference.com/w/cpp/language/pimpl
-
 #### [[⬆]](#toc) <a name='javascript'>Javascript:</a>
 * this keyword
 * How *prototypes* work?
@@ -304,13 +264,6 @@
 * What is event *bubbling* and *capturing*? (target.addEventListener(type, listener[, useCapture]))
 * What is *AMD*(Asynchronous Module Design) and *CommonJS*?
 * What is *jQuery*?
-
-#### [[⬆]](#toc) <a name='python'>Python:</a>
-* [Slice notation](https://stackoverflow.com/questions/509211/understanding-slice-notation/509295#509295)
-
-#### [[⬆]](#toc) <a name='go'>Go:</a>
-* [Language Specification](https://golang.org/ref/spec)
-* [Memory Model](https://golang.org/ref/mem)
 
 #### [[⬆]](#toc) <a name='codewriting'>Codewriting:</a>
 * Implement binary search
@@ -355,7 +308,6 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 
 #### [[⬆]](#toc) <a name='functional-programming'>Functional programming:</a>
 * [*Referential transparency*](https://en.wikipedia.org/wiki/Referential_transparency)
-* What is [*Monad*](https://en.wikipedia.org/wiki/Monad_(functional_programming))?
 
 #### [[⬆]](#toc) <a name='reactive-programming'>Reactive programming:</a>
 * [*The Reactive Manifesto*](http://www.reactivemanifesto.org) (responsive, resilient, elastic, message driven)
@@ -408,26 +360,6 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 * What is total/partial order?
 * How to work with legacy code? (http://programmers.stackexchange.com/a/122024)
 
-#### [[⬆]](#toc) <a name='machine-learning'>Machine learning:</a>
-* [*Bayes' theorem*](https://en.wikipedia.org/wiki/Bayes%27_theorem):
-
-![equation](http://latex.codecogs.com/svg.latex?\inline&space;\fn_cs&space;P(A|B)&space;=&space;\dfrac{P(B|A)\times&space;P(A)}{P(B)},P(B)&space;=&space;\sum\limits_{i}{P(Ai)\times&space;P(B|Ai)})
-* [*Confidence interval*](https://en.wikipedia.org/wiki/Confidence_interval)
-* [*p-value*](https://en.wikipedia.org/wiki/P-value)
-* [*Overfitting*](https://en.wikipedia.org/wiki/Overfitting)
-* [*Bias–variance tradeoff*](https://en.wikipedia.org/wiki/Bias–variance_tradeoff)
-* [*Backpropagation*](https://en.wikipedia.org/wiki/Backpropagation)
-* [*Reinforcement learning*](https://en.wikipedia.org/wiki/Reinforcement_learning)
-* [*Curse of dimensionality*](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
-* [*Cross-validation*](https://en.wikipedia.org/wiki/Cross-validation_(statistics))
-* [*Bag-of-words*](https://en.wikipedia.org/wiki/Bag-of-words_model), [*Stop words*](https://en.wikipedia.org/wiki/Stop_words), [*n-gram*](https://en.wikipedia.org/wiki/N-gram), [*tf–idf*](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), [*Latent semantic analysis*](https://en.wikipedia.org/wiki/Latent_semantic_analysis)
-* [*Linear regression*](https://en.wikipedia.org/wiki/Linear_regression)
-* [*Logistic regression*](https://en.wikipedia.org/wiki/Logistic_regression)
-* [*Naive Bayes classifier*](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
-* [*Support vector machine*](https://en.wikipedia.org/wiki/Support_vector_machine)
-* [*Principal component analysis*](https://en.wikipedia.org/wiki/Principal_component_analysis)
-* [*Deep learning*](https://en.wikipedia.org/wiki/Deep_learning)
-
 #### [[⬆]](#toc) <a name='big-data'>Big Data:</a>
 * [*Lambda architecture*](https://en.wikipedia.org/wiki/Lambda_architecture)
 * [*HyperLogLog*](https://en.wikipedia.org/wiki/HyperLogLog)
@@ -464,14 +396,7 @@ m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 * What is *CSP* and *SRI hash* ?
 * What is *Clickjacking* and *Cursorjacking* ? How to prevent it ?
 
-#### [[⬆]](#toc) <a name='android'>Android:</a>
-
 #### [[⬆]](#toc) <a name='books'>Books:</a>
-##### C++ programming
-* [The C++ Programming Language, 4th Edition](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840)
-* [Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996) 
-##### Java programming
-* [Effective Java (3rd Edition)](https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997)
 ##### Algorithms
 * [Introduction to Algorithms, 3rd Edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
 * [The Art of Computer Programming](https://www.amazon.co.uk/Art-Computer-Programming-Volumes-1-4a/dp/0321751043)
@@ -482,32 +407,19 @@ m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 * [How to Solve It: Modern Heuristics](https://www.amazon.com/How-Solve-Heuristics-Zbigniew-Michalewicz/dp/3540224947)
 * [Scheduling Algorithms](https://www.amazon.com/Scheduling-Algorithms-Peter-Brucker/dp/354069515X)
 ##### Concurrent programming
-* [Java Concurrency in Practice](https://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601)
-* [C++ Concurrency in Action, 2nd Edition](https://www.amazon.com/C-Concurrency-Action-Anthony-Williams/dp/1617294691)
 * [The Art of Multiprocessor Programming](https://www.amazon.com/Art-Multiprocessor-Programming-Revised-Reprint/dp/0123973376)
 ##### Statistics
 * [Introductory Statistics](https://www.amazon.com/Introductory-Statistics-10th-Neil-Weiss/dp/0321989171)
 * [All of Statistics: A Concise Course in Statistical Inference](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/1441923225)
-##### Machine Learning
-* [Applied Machine Learning](https://www.amazon.com/Applied-Machine-Learning-David-Forsyth/dp/3030181138)
-* [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems 2nd Edition](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646)
-* [The Elements of Statistical Learning: Data Mining, Inference, and Prediction](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
-* [Machine Learning: a Concise Introduction](https://www.amazon.com/Machine-Learning-Introduction-Probability-Statistics/dp/1119439191)
-* [Learning From Data](https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069)
 ##### Digital Signal Processing
 * [Digital Signal Processing: A Practical Approach, 2nd Edition](https://www.amazon.com/Digital-Signal-Processing-Practical-Approach/dp/0201596199)
-##### Digital Image Processing
-* [Digital Image Processing, 4th Edition](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
-* [The Image Processing Handbook, 7th Edition](https://www.amazon.com/Image-Processing-Handbook-John-Russ/dp/1138747491)
 ##### Other
-* [Reactive Programming with RxJava](https://www.amazon.com/Reactive-Programming-RxJava-Asynchronous-Applications/dp/1491931655)
 * [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
 * [Big Data: Principles and best practices of scalable realtime data systems](https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343)
 * [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 * [Kafka: The Definitive Guide](https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1491936169)
 * [Cassandra: The Definitive Guide](https://www.amazon.com/Cassandra-Definitive-Guide-Distributed-Scale/dp/1491933666)
 * [The Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200)
-* [Hibernate in Action](https://www.amazon.com/Hibernate-Action-Christian-Bauer/dp/193239415X)
 * [The Garbage Collection Handbook](https://www.amazon.com/Garbage-Collection-Handbook-Management-Algorithms/dp/1420082795)
 * [Pro Git](https://git-scm.com/book/en/v2)
 * [Learning JavaScript](https://www.amazon.com/Learning-JavaScript-Essentials-Application-Development/dp/1491914912)
